@@ -3,11 +3,12 @@
     padding: 0;
 }
 
-body{
+body {
     background-color: black;
     color: whitesmoke;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .Namz input {
     width: 200px;
     border-radius: 1.5rem;
@@ -18,8 +19,6 @@ body{
     font-size: xx-large;
     background-color: hsl(50, 50%, 65%);
 }
-
-
 
 table tr th,
 table tr td,
@@ -33,20 +32,67 @@ table {
     font-size: x-large;
 }
 
-#a{
+/* #a{
     align-items: center;
-    
-}
-.common{
-background-color: yellow;
-transition: 2s;
-}
-
-#fazr{
+} */
+/* #fazr{
    display: inline;
-}
-
-h1{
+} */
+h1 {
     margin-top: 1rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width:320px) {
+    .Namz {
+        display: flex;
+        width: 700px;
+        background-color: pink;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Namz input {
+        width: 130px;
+        height: 60px;
+        border-radius: 1rem;
+    }
+
+    table tr th,
+    table tr td,
+    table {
+        border: 1px solid white;
+        border-collapse: collapse;
+        width: 700px;
+        height: 50px;
+        margin-top: 5rem;
+        text-align: center;
+        font-size: x-large;
+    }
+}
+
+@media (min-width:321px){
+    .Namz {
+display: flex;     
+width: 700px;
+background-color: pink;
+justify-content: center;
+align-items: center;
+    }   
+    .Namz input {
+        width: 160px;
+        height: 60px;
+        border-radius: 1rem;
+    }
+    table tr th,
+    table tr td,
+    table {
+        border: 1px solid white;
+        border-collapse: collapse;
+        width: 700px;
+        height: 50px;
+        margin-top: 5rem;
+        text-align: center;
+        font-size: x-large;
+    }
 }
