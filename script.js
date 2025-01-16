@@ -3,7 +3,11 @@ const zuhr = document.getElementById("zuhr")
 const asar = document.getElementById("asar")
 const magrib = document.getElementById("magrib")
 const isha = document.getElementById("isha")
+const set = document.getElementById("set")
+const cancel = document.getElementById("DD2")
+const reset = document.getElementById("reset")
 
+const cont2 = document.querySelector(".container2")
 const F = document.getElementById("F")
 const Z = document.getElementById("Z")
 const A = document.getElementById("A")
@@ -17,8 +21,17 @@ zuhr.addEventListener("click", f2)
 asar.addEventListener("click", f3)
 magrib.addEventListener("click", f4)
 isha.addEventListener("click", f5)
+set.addEventListener("click", setting)
+cancel.addEventListener("click", canc)
+reset.addEventListener("click", Reset)
 
-j = 1
+// fazr.addEventListener("dblclick", f8)
+// zuhr.addEventListener("dbclick", f9)
+// asar.addEventListener("dbclick", f10)
+// magrib.addEventListener("dbclick", f11)
+// isha.addEventListener("dbclick", f12)
+
+const newLocal = j = 1
 function f1() {
    j++;
    localStorage.setItem("fazr", j)
@@ -111,4 +124,29 @@ window.addEventListener("load", fg)
 function fg() {
    x = localStorage.getItem("percent")
    percent.innerText = x;
+}
+
+r = 1
+function f8() {
+   L = eval(j) - eval(r)
+   console.log(L)
+
+}
+
+function setting() {
+   cont2.classList.add("display")
+}
+function canc() {
+   cont2.classList.remove("display")
+}
+
+function Reset() {
+   localStorage.setItem("fazr", 0)
+   localStorage.setItem("zuhr", 0)
+   localStorage.setItem("magrib", 0)
+   localStorage.setItem("isha", 0)
+   localStorage.setItem("asar", 0)
+   localStorage.setItem("tot", 0)
+   localStorage.setItem("percent", 0)
+   location.reload()
 }
