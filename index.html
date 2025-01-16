@@ -6,22 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page 1</title>
     <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+
+
 <body>
+    <!-- <i class="fa-solid fa-gears"></i> -->
+
     <center>
 
 
         <!-- <h1>NAMAZ COUNTER</h1><br> -->
-         <br>
+        <br>
 
+        <div class="cont">
+            
+            <div class="Namz">
 
-        <div class="Namz">
-            <input type="button" value="Fazr" id="fazr">
-            <input type="button" value="Zuhr" id="zuhr">
-            <input type="button" value="Asar" id="asar">
-            <input type="button" value="Magrib" id="magrib">
-            <input type="button" value="Isha" id="isha">
+                <input type="button" value="Fazr" id="fazr">
+                <input type="button" value="Zuhr" id="zuhr">
+                <input type="button" value="Asar" id="asar">
+                <input type="button" value="Magrib" id="magrib">
+                <input type="button" value="Isha" id="isha">
+            </div>
         </div>
 
         <!--  -->
@@ -29,11 +38,6 @@
 
         <div class="table-of-namz">
             <table>
-
-
-
-
-
                 <tr id="a">
                     <td>Fazr</td>
                     <td id="F"></td>
@@ -45,6 +49,10 @@
                 <tr>
                     <td>Asar</td>
                     <td id="A">0</td>
+                    <td id="DD">
+    <i class="fa fa-cog" aria-hidden="true" id="set"></i>
+
+                    </td>
                 </tr>
                 <tr>
                     <td>Magrib</td>
@@ -60,7 +68,7 @@
                 <tr>
                     <td>Total</td>
                     <td id="total">0</td>
-                    <td >OUT OF 1825</td>
+                    <td>OUT OF 1825</td>
                 </tr>
                 <tr>
                     <td>Percentage</td>
@@ -69,10 +77,19 @@
 
 
             </table>
+            <!-- <i class="fa-solid fa-ellipsis"></i> -->
         </div><br><br>
 
 
-    </center>
+    <div class="container2" id="container2">
+        <i class="fa fa-times" aria-hidden="true" id="DD2"></i>
+        <h3>Settings</h3>
+        <button id="reset">RESET!!!</button>
+        <!-- <input type="button" value="MODE"> -->
+    </div>
+</center>
+
+
     <script src="script.js"></script>
 </body>
 
